@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Montserrat';
+    background: #16161E;
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 130px;
+    background: #29292C;
+    font-weight: 600;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    line-height: 30px;
+
+}
+
+.nav {
+    display: flex;
+    gap: 24px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.nav__item {
+    cursor: pointer;
+    transition: 300ms;
+    position: relative;
+}
+
+.nav__item::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -2px;
+    transform: translateX(-10%);
+    opacity: 0;
+    background: #FA4A55;
+    position: absolute;
+    transition: 300ms;
+}
+
+.nav__item:hover::after {
+    transform: translateX(0);
+    opacity: 1;
+    color: #FA4A55;
+}
+
+.nav__item.active {
+    color: #FA4A55;
+}
+
+.login {
+    background: #FA4A55;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 40px;
+    padding: 3px 28px;
+    border-radius: 10px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 58px 0;
+    text-align: center;
+    align-items: center;
+}
+
+div.head {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58px;
+    width: 800px;
+}
+
+.base {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    width: 425px;
+}
+
+.btn {
+    display: flex;
+    gap: 16px;
+}
+
+.btn p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 40px;
+
+    border-radius: 10px;
+    padding: 3px 28px 3px 28px;
+
+    background: #FA4A55;
+}
+
+.keypoints {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    opacity: 80%;
+}
+
+.kp {
+    background: #29292C;
+    height: 123px;
+    width: 340px;
+    border-radius: 12px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    color: #E6E6E6;
+}
+
+.kp p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.kp .head {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+}
